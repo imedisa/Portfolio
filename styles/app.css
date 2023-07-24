@@ -33,3 +33,7 @@ a {
 .gray-text{
     color: var(--gray-3, #828282);
 }
+.bg-span{
+    content: ' ';
+    background-color: #212121;
+}
