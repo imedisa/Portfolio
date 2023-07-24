@@ -4,19 +4,32 @@
 
 /* ALL */
 
-html{
-
+html {
 }
-body{
-
-    line-height: 1.5;
-    font-family: 'DM Sans', sans-serif;
-
+body {
+  line-height: 1.5;
+  font-family: "DM Sans", sans-serif;
 }
 /* RESET */
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-.textcolor-white{
-    color: #fff;
+.textcolor-white {
+  color: #fff;
+}
+.width-height-picture {
+    content: ' ';
+    display: flex;
+  width: 650px;
+  height: 650px;
+  border-radius: 650px;
+  border: 1px solid #202020;
+  background: rgba(30, 29, 29, 0.2);
+}
+.width-height-special{
+    width: 600px;
+    height: 600px;
+}
+.gray-text{
+    color: var(--gray-3, #828282);
 }
