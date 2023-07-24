@@ -1,0 +1,22 @@
+/* IMPORT */
+
+@import "fonts.css";
+
+/* ALL */
+
+html{
+
+}
+body{
+
+    line-height: 1.5;
+    font-family: 'DM Sans', sans-serif;
+
+}
+/* RESET */
+a{
+    text-decoration: none;
+}
+.textcolor-white{
+    color: #fff;
+}
