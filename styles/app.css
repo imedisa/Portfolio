@@ -17,23 +17,38 @@ a {
 .textcolor-white {
   color: #fff;
 }
-.width-height-picture {
-    content: ' ';
-    display: flex;
-  width: 650px;
-  height: 650px;
-  border-radius: 650px;
+.width-height-picture-mb {
+  content: " ";
+  display: flex;
+  width: 238px;
+  height: 238px;
+  border-radius: 238px;
   border: 1px solid #202020;
   background: rgba(30, 29, 29, 0.2);
 }
-.width-height-special{
-    width: 600px;
-    height: 600px;
+.gray-text {
+  color: var(--gray-3, #828282);
 }
-.gray-text{
-    color: var(--gray-3, #828282);
+.bg-span {
+  content: " ";
+  background-color: #212121;
 }
-.bg-span{
-    content: ' ';
-    background-color: #212121;
+.width-height-special-mb {
+  width: 210px;
+  height: 210px;
+}
+@media (min-width:1180px){
+  .width-height-picture{
+    width: 550px;
+    height: 550px;
+    content: " ";
+    display: flex;
+    border-radius: 650px;
+    border: 1px solid #202020;
+    background: rgba(30, 29, 29, 0.2);
+  }
+  .width-height-special {
+    width: 500px;
+    height: 500px;
+  }
 }
