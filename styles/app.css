@@ -133,3 +133,6 @@ a {
 .gray-2{
   color : #4F4F4F;
 }
+.border-gray{
+  border-bottom:#4F4F4F ;
+}
