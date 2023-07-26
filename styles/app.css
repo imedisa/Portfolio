@@ -46,7 +46,7 @@ a {
     height: 550px;
     content: " ";
     display: flex;
-    border-radius: 650px;
+  ;
     border: 1px solid #202020;
     background: rgba(30, 29, 29, 0.2);
   }
@@ -67,7 +67,7 @@ a {
   cursor: pointer;
   position: relative;
   z-index: 0;
-  border-radius: 32px;
+
 }
 
 .bn::after {
