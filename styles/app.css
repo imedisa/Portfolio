@@ -33,6 +33,9 @@ a {
   content: " ";
   background-color: #212121;
 }
+.bg-gray{
+  background: #212121;;
+}
 .width-height-special-mb {
   width: 210px;
   height: 210px;
@@ -126,4 +129,7 @@ a {
 }
 .gray-text2{
   color:#535353;
+}
+.gray-2{
+  color : #4F4F4F;
 }
