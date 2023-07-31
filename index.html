@@ -13,7 +13,7 @@
   <!-- && BODY -->
   <body class="bg-neutral-900 textcolor-white flex flex-col">
     <!-- ^^ CONTAINER -->
-    <div class="px-4 sm:px-14">
+    <div class="px-4 sm:px-14" id="app">
       <!--^^ HEADER -->
       <header
         class="bg-neutral-900 sticky z-10 top-0 left-0 h-16 border-b border-zinc-700"
@@ -60,18 +60,27 @@
           </h3>
           <p class="text-lg font-medium gray-text mt-2">Frontend Developer</p>
           <!-- ^^ BUTTONS -->
-          <div class="flex flex-row mt-9">
+          <div  class="flex flex-row mt-9">
             <button
               class="text-xs xl:text-sm font-medium px-6 py-2 bg-purple-600 hover:bg-purple-800 hover:transition-all"
             >
-              <a href="https://lileforum.info/wp-content/uploads/2022/09/resume_001.docx" download="https://lileforum.info/wp-content/uploads/2022/09/resume_001.docx"> Download CV </a>
+              <a
+                href="https://lileforum.info/wp-content/uploads/2022/09/resume_001.docx"
+                download="https://lileforum.info/wp-content/uploads/2022/09/resume_001.docx"
+              >
+                Download CV
+              </a>
             </button>
             <button
+              @click="show = !show"
               class="text-xs xl:text-sm font-medium px-6 py-2 border border-white bn focus:border-purple-800 ml-3 focus:bg-purple-800 hover:transition-all"
             >
-              Learn More
-            </button>
+              Learn More</button
+            >
           </div>
+          <Transition class="text-sm block mt-4" name="slide-fade" >
+            <p class="" v-if="show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quia magnam libero exercitationem perspiciatis dolor amet, soluta velit itaque eveniet reprehenderit laudantium cumque quibusdam perferendis dolorem cum impedit nam? Aliquam.</p>
+          </Transition>
         </div>
         <!--^^ PICTURE -->
         <div class="mt-20 lg:mt-0">
@@ -325,6 +334,16 @@
         imedisa 2023
       </div>
     </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+      Vue.createApp({
+        data() {
+          return {
+            show: false,
+          };
+        },
+      }).mount("#app");
+    </script>
   </body>
 </html>
 
